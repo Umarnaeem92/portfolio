@@ -2,7 +2,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #f5f8fa;
   color: #333;
   scroll-behavior: smooth;
 }
@@ -14,9 +14,9 @@ body {
 }
 
 header {
-  background: #fff;
+  background: #ffffff;
   padding: 20px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -31,22 +31,22 @@ header .container {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #222;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
 }
 
 nav a:hover {
-  color: #007BFF;
+  color: #ff5722;
 }
 
 .hero {
-  background: linear-gradient(to right, #007BFF, #00c6ff);
+  background: linear-gradient(135deg, #00c6ff, #007BFF);
   color: #fff;
   padding: 100px 0;
   text-align: center;
@@ -54,39 +54,53 @@ nav a:hover {
 }
 
 .hero h2 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+  font-size: 2.8em;
+  margin-bottom: 15px;
 }
 
 .hero span {
-  color: #ffd700;
+  color: #ffeb3b;
 }
 
 .btn {
   display: inline-block;
-  background: #fff;
+  background: #ffffff;
   color: #007BFF;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-weight: bold;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
   text-decoration: none;
-  margin-top: 20px;
-  transition: background 0.3s;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 .btn:hover {
-  background: #e0e0e0;
+  background: #e3f2fd;
+  color: #0056b3;
 }
 
-.about, .projects, .contact {
+section {
   padding: 80px 0;
   animation: fadeInUp 1s ease-out both;
 }
 
 h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 2.2em;
+  margin-bottom: 25px;
   text-align: center;
+  color: #222;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #007BFF;
+  margin: 10px auto 0;
+  border-radius: 2px;
 }
 
 .tech-stack {
@@ -99,11 +113,13 @@ h2 {
 }
 
 .tech-stack li {
-  background: #007BFF;
+  background: linear-gradient(to right, #00c6ff, #007BFF);
   color: white;
-  padding: 8px 15px;
+  padding: 10px 18px;
   border-radius: 20px;
-  font-size: 0.9em;
+  font-size: 0.95em;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-list {
@@ -114,14 +130,15 @@ h2 {
 
 .project {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project img {
@@ -130,31 +147,54 @@ h2 {
 }
 
 .project h3 {
-  margin: 15px;
+  margin: 20px 15px 10px;
+  font-size: 1.2em;
+  color: #333;
 }
 
 .project p {
-  margin: 0 15px 15px;
+  margin: 0 15px 20px;
   font-size: 0.95em;
+  color: #555;
 }
 
 .contact a {
   color: #007BFF;
   text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  color: #ff5722;
 }
 
 .social-links {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
 }
 
+.social-links a {
+  background: #007BFF;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  background: #0056b3;
+}
+
 footer {
-  background: #f1f1f1;
+  background: #e0e0e0;
   text-align: center;
-  padding: 20px 0;
+  padding: 25px 0;
   font-size: 0.9em;
+  color: #555;
 }
 
 /* Animations */
