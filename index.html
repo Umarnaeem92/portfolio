@@ -1,23 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umar Naeem | Flutter Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <div class="container">
-    <h1>Hello, I'm Your Name</h1>
-    <p>I’m a Flutter Developer with experience in building beautiful and performant apps.</p>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>App 1:</strong> Uber-like ambulance app</li>
-      <li><strong>App 2:</strong> Halal food checker (Mustakshif)</li>
-      <li><strong>App 3:</strong> Parent-child control app</li>
-    </ul>
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-  </div>
+  <header>
+    <div class="container">
+      <h1>Umar Naeem</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Hello, I'm a <span>Flutter Developer</span></h2>
+      <p>I build beautiful, responsive, and high-performance cross-platform apps.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I specialize in Flutter and Dart to build scalable mobile apps. I work with Firebase, REST APIs, and follow clean architecture and best UI/UX practices.</p>
+      <ul class="tech-stack">
+        <li>Flutter</li>
+        <li>Dart</li>
+        <li>Firebase</li>
+        <li>REST API</li>
+        <li>GetX / Riverpod</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project fade-in">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1">
+          <h3>Food Delivery App</h3>
+          <p>A complete Foodpanda-style clone built in Flutter with Firebase backend and real-time order tracking.</p>
+        </div>
+        <div class="project fade-in">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2">
+          <h3>Quran App</h3>
+          <p>Displays halal/haram products, 99 names of Allah, and Quran translations. Built with Flutter and clean UI principles.</p>
+        </div>
+        <div class="project fade-in">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3">
+          <h3>Sabour Platform</h3>
+          <p>A teacher-student matchmaking platform with scheduling, wallet, and advisor support built using Flutter and Firebase.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email me at <a href="mailto:umarnaeem92@gmail.com">umarnaeem92@gmail.com</a></p>
+      <div class="social-links">
+        <a href="https://github.com/umarnaeem92" target="_blank">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Umar Naeem. All rights reserved.</p>
+  </footer>
 </body>
+
 </html>
